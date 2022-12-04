@@ -1,0 +1,143 @@
+@forward "scss/globals/";
+
+.maindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.box {
+  height: 500px;
+  width: 900px;
+  border: 1px solid var(--border-color);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.iconbox {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+}
+.infobox {
+  ul {
+    list-style-type: none;
+  }
+  li {
+    padding: 10px;
+    h3 {
+      display: inline;
+    }
+  }
+}
+
+/* CSS */
+.button-3 {
+  appearance: none;
+  margin-left: 10px;
+  background-color: var(--border-color);
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+.final {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.button-3:hover {
+  background-color: var (--background-color);
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.weatherinfo {
+  display: flex;
+
+  section {
+    flex-basis: 50%;
+  }
+}
+.searchbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"],
+select {
+  padding: 7px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}

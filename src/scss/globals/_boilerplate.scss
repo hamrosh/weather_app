@@ -1,0 +1,26 @@
+@use "../utils" as u;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/* Define standard variables and values for website */
+$bgcolor: rgb(63, 241, 28);
+$textcolor: rgb(183, 181, 32);
+
+/* Use the variables */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: u.$font;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
