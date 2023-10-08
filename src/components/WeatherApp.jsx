@@ -31,7 +31,7 @@ function WeatherApp() {
   return (
     <article className="box">
       <div className="title">
-        <h2>Weather in your City</h2>
+        <h2>Weather in the city you live in</h2>
       </div>
       <div className="search">
         <Search city={city} setCity={setCity} showWeather={showWeather} />
